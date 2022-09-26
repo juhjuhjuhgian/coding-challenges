@@ -22,3 +22,16 @@ function xor(a, b) {
       return true;
     } 
   }
+
+//   Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
+
+// Example:
+
+// get_char(65)
+// should return:
+
+//p an integer is being passed in 
+//r the corresponding code on the chart
+//e get_char(31) would return ""
+  //get_char(51) would return "3"
+//p I stored the chart in as an object and assigned it to a variable called Chars then returned Chars[c]
