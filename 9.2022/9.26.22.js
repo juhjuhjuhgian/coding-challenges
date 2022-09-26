@@ -35,3 +35,25 @@ function xor(a, b) {
 //e get_char(31) would return ""
   //get_char(51) would return "3"
 //p I stored the chart in as an object and assigned it to a variable called Chars then returned Chars[c]
+
+// Define a method hello that returns "Hello, Name!" to a given name, or says Hello, World! if name is not given (or passed as an empty String).
+
+// Assuming that name is a String and it checks for user typos to return a name with a first capital letter (Xxxx).
+
+// Examples:
+
+// * With `name` = "john"  => return "Hello, John!"
+// * With `name` = "aliCE" => return "Hello, Alice!"
+// * With `name` not given 
+//   or `name` = ""        => return "Hello, World!"
+
+//p what is being passed in is a string, either empty or a name that may or may not be first letter uppercase, or nothing
+//r what should be returned is "Hello," plus the name if one is given, if nothing then undefined, if empty then just "Hello, World"
+//e hello(gian) would return "Hello, Gian!"
+  //hello("") would return "Hello World!"
+  //hello() would return undefined
+//p I wasn't able to get this one without checking for the solution, but I was close as I was missing the substr method and charAt method. I was already using a conditional and template literal, but was unable to put it all together. Via ternary operator, If name was empty or nothing was passed in, return Hello Word, else (template literal) return Hello first letter to uppercase then remaining (via substr) to lowercase starting at character one.
+
+function hello(name){
+    return name === '' || name === 'undefined' ? 'Hello World!' : `Hello, ${name.charAt(0).toUpperCase()}${name.substr(1).toLowerCase()}!`
+}
