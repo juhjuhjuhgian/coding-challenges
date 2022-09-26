@@ -45,3 +45,18 @@ function plural(n) {
 function multiTable(number) {
     return `1 * ${number} = ${1 * number}\n2 * ${number} = ${2 * number}\n3 * ${number} = ${3 * number}\n4 * ${number} = ${4 * number}\n5 * ${number} = ${5 * number}\n6 * ${number} = ${6 * number}\n7 * ${number} = ${7 * number}\n8 * ${number} = ${8 * number}\n9 * ${number} = ${9 * number}\n10 * ${number} = ${10 * number}`
     }
+
+    // Write a function that returns a string in which firstname is swapped with last name.
+
+    // Example(Input --> Output)
+    
+    // "john McClane" --> "McClane john"
+
+    //p a string with a first and last name
+    //r last name should be first and vice versa
+    //e nameShuffle('gian carnero') would return 'carnero gian'
+    //p I used the split method and targeted the space then returned the second name first then the first name using a template literal
+    function nameShuffler(str){
+        str = str.split(' ')
+        return `${str[1]} ${str[0]}`
+      }
