@@ -14,3 +14,11 @@ function take(arr, n) {
 function saleHotdogs(n){
     return n < 5 ? n * 100 : n >= 10 ? n * 90 : n * 95;
   }
+
+//   Write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value.
+
+//   Division by zero should return NaN.
+
+  function remainder(n, m){
+    return m % 0 || n % 0 ? NaN : m > n ? m % n : n % m
+  }
