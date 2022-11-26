@@ -1,27 +1,15 @@
-// Given a Divisor and a Bound , Find the largest integer N , Such That ,
+// My grandfather always predicted how old people would get, and right before he passed away he revealed his secret!
 
-// Conditions :
-// N is divisible by divisor
+// In honor of my grandfather's memory we will write a function using his formula!
 
-// N is less than or equal to bound
+// Take a list of ages when each of your great-grandparent died.
+// Multiply each number by itself.
+// Add them all together.
+// Take the square root of the result.
+// Divide by two.
 
-// N is greater than 0.
-
-// Notes
-// The parameters (divisor, bound) passed to the function are only positive values .
-// It's guaranteed that a divisor is Found .
-// Input >> Output Examples
-// maxMultiple (2,7) ==> return (6)
-// Explanation:
-// (6) is divisible by (2) , (6) is less than or equal to bound (7) , and (6) is > 0 .
-
-function maxMultiple(divisor, bound){
-    let x = 0
-    
-    for(let i = divisor; i <= bound; i++){
-      if (i % divisor == 0 && i > x){
-        x = i
-      }
-    }
-   return x
- }
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+    let x = ((age1*age1) + (age2*age2) + (age3*age3) + (age4*age4) + (age5*age5) + (age6*age6) + (age7*age7) + (age8*age8))
+  let y =  Math.sqrt(x) / 2 
+  return Math.floor(y)
+  }
