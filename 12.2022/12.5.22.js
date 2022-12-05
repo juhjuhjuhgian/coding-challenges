@@ -9,6 +9,8 @@
 // Vowels in this context refers to: a e i o u y (including upper case)
 // This is indexed from [1..n] (not zero indexed!)
 
+
+//my inital code which was wrong
 function vowelIndices(word){
     let vowels = ['a', 'e', 'i', 'o', 'u','y']
     let y = []
@@ -23,4 +25,14 @@ function vowelIndices(word){
     return y
   }
   
-  
+
+  //correct code
+  function vowelIndices(word){
+    word = word.toLowerCase()
+    var ans = [];
+    var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+    for(i=0; i<word.length; i++){
+      if(vowels.indexOf(word[i])>=0){ans.push(i+1)}
+    }
+    return ans
+  }
