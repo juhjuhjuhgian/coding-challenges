@@ -1,0 +1,20 @@
+// If the text or the character are empty, return an empty string.
+// There will never be a case when both are empty as nothing is going on!!
+
+// Note: The character is a string of length 1 or an empty string.
+
+// Example
+// text before = "abc"
+// character   = "z"
+// text after  = "zzz"
+
+function contamination(text, char){
+  let x = text.length
+  
+  if(text === '' || char === ''){
+    return ''
+  } else {
+    return char.repeat(x)
+  }
+
+}
